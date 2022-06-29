@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { ILoginInputProps } from "./input.types";
+import { IRefLoginInputProps } from "./input.types";
 
 interface IInputProps {
   error: boolean;
@@ -21,7 +21,7 @@ const Input = styled.input`
   }
 `;
 
-export default function LoginInput(props: ILoginInputProps) {
+export default function RefLoginInput(props: IRefLoginInputProps) {
   return (
     <>
       <Input
@@ -30,6 +30,7 @@ export default function LoginInput(props: ILoginInputProps) {
         type={props.type}
         error={props.error}
         onKeyPress={props.OnKeyPressLogin}
+        ref={props.inputRef}
       ></Input>
     </>
   );

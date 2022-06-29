@@ -1,5 +1,6 @@
 import LoginBtn from "../../commons/button/loginBtn";
 import LoginInput from "../../commons/input/loginInput";
+import RefLoginInput from "../../commons/input/refLoginInput";
 import * as S from "./login.styles";
 import { ILoginHTMLProps } from "./login.types";
 
@@ -9,7 +10,7 @@ export default function LoginHTML(props: ILoginHTMLProps) {
       <S.Container>
         <S.LoginBox>
           <S.Title>Login</S.Title>
-          <LoginInput
+          <RefLoginInput
             type="text"
             text="전화번호, 사용자 이름 또는 이메일"
             onChange={props.OnChangeEmail}
@@ -22,7 +23,6 @@ export default function LoginHTML(props: ILoginHTMLProps) {
             text="비밀번호"
             onChange={props.OnChangePassword}
             error={props.passwordError}
-            inputRef={props.inputRef}
             OnKeyPressLogin={props.OnKeyPressLogin}
           />
           <LoginBtn
