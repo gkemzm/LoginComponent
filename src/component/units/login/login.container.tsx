@@ -9,11 +9,11 @@ import { ChangeEvent } from "react";
 import { KeyboardEvent } from "react";
 
 export default function LoginScript() {
-  const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState(false);
-  const [password, setPassword] = useState("");
-  const [passwordError, setPasswordError] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+  const [email, setEmail] = useState<string>("");
+  const [emailError, setEmailError] = useState<boolean>(false);
+  const [password, setPassword] = useState<string>("");
+  const [passwordError, setPasswordError] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
 

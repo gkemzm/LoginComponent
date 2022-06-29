@@ -1,4 +1,4 @@
-import { KeyboardEvent, MouseEvent } from "react";
+import { MouseEvent } from "react";
 
 export interface ILoginBtnProps {
   onClick: (event: MouseEvent<HTMLButtonElement>) => void;
