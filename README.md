@@ -15,6 +15,18 @@
 Container/Presenter 패턴을 이용해 구조를 나눴습니다.
 
 
+## 실행 방법
+fork 후 npm install
+
+첫번째 터미널에서 
+npm start
+
+터미널 하나를 추가로 켠 후
+json-server --watch mock.json --port 3001 
+
+명령어를 통해 fake 서버를 활성화 시켜준다.
+
+
 ## 결과물
 
 ![1](https://user-images.githubusercontent.com/100768044/176333924-8a07cafa-00fd-4544-ac5d-1c26a6985959.PNG)<br>
